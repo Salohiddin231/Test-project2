@@ -6,9 +6,9 @@ export default function App() {
   return (
     <div className="app">
       <div className="app_grid">
-        {products.map((item, index) => {
+        {products.map((item) => {
           return (
-            <div className="app_card" key={index}>
+            <div className="app_card">
               <FaCode className="app_icon" />
               <h3 className="app_title">{item.title}</h3>
               <p className="app_suptitle">{item.desc}</p>
