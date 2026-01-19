@@ -2,7 +2,7 @@ import "./App.scss";
 import { FaCode } from "react-icons/fa";
 
 export default function App() {
-  const items = [
+  const product = [
     {
       icon: FaCode,
       title: "Программирование",
@@ -62,7 +62,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="app_grid">
-        {items.map((item, items) => {
+        {product.map((item, items) => {
           const Icon = item.icon;
           return (
             <div className="app_card" key={items}>
